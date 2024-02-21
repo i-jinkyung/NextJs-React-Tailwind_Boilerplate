@@ -21,7 +21,12 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "^atoms/*": ["./src/app/_atoms/*"],
+      "^components/*": ["./src/app/_components/*"],
+      "^hooks/*": ["./src/app/_hooks/*"],
+      "^types/*": ["./src/app/_types/*"],
+      "^utils/*": ["./src/app/_utils/*"]
     }
   },
   // tsc 컴파일 할 때 포함하거나 제외할 파일이나 디렉토리
