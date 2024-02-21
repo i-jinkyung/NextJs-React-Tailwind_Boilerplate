@@ -1,12 +1,15 @@
 {
   "compilerOptions": {
+    "target" : "es6",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
+    "baseUrl": "./src", // src 폴더내의 타입스크립트 파일 사용
     "skipLibCheck": true,
-    "strict": true,
+    "sourceMap": true, // 개발 환경에서만 true 설정하기 , 에러발생시 코드 디버깅이 쉬움
+    "strict": true, // 엄격한 타입 검사
     "noEmit": true,
     "esModuleInterop": true,
-    "module": "esnext",
+    "module": "esnext", // 컴파일 후 생성되는 javascript 모듈의 형식
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
@@ -21,6 +24,7 @@
       "@/*": ["./src/*"]
     }
   },
+  // tsc 컴파일 할 때 포함하거나 제외할 파일이나 디렉토리
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules"]
 }
